@@ -1,0 +1,222 @@
+.navbar {
+    background-color: #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    position: relative; /* Add relative positioning for the logo container */
+    transition: color 0.3s; /* Add color transition */
+}
+
+/* Add a pseudo-element for the border animation */
+.logo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Set the border height */
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+/* Add an animation on hover for the logo text and border */
+.logo:hover::after,
+.logo:hover {
+    color: white; /* Change the text color on hover to match the links */
+    background-color: rgb(235, 79, 183); /* Add a colorful background on hover to match the links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    padding: 10px 20px; /* Add padding to create button-like appearance */
+    background-color: transparent; /* Set a transparent background */
+    border: 1px solid transparent; /* Add a transparent border */
+}
+
+.nav-links li a:hover {
+    color: rgba(255, 255, 255, 0.944); /* Change the text color on hover */
+    background-color: rgb(235, 79, 183); /* Add a colorful background on hover */
+    border: 1px solid #f39c12; /* Add a border on hover */
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.footer-links h2, .footer-contact h2 {
+    font-size: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #f39c12; /* A contrasting color for links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17f1e7; /* A colorful background for social icons */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    background-color: #e74c3c; /* Change the background color on hover */
+}
+
+.jake3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 10px 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.toggle-label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.toggle-bg {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.toggle-bg::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-bg::before {
+    transform: translateX(30px);
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode h1 {
+    color: #fff;
+}
+
+.jake4{
+    display: flex;
+    justify-content: end;
+}
